@@ -4,9 +4,11 @@ python:
         - "3.6"
 
 on: [push]
-
-install:
-        - pip3 install poetry
-        - make install
-script:
-        - make lint
+jobs:
+        runs-on: ubuntu-latest
+        Linter-Check:
+                install:
+                        - pip3 install poetry
+                        - make install
+                script:
+                        - make lint
