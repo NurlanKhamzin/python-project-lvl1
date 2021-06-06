@@ -1,5 +1,5 @@
 name: GitHub Actions
-on: [commit]
+on: [push]
 jobs:
   Make-Lint:
     runs-on: ubuntu-latest
