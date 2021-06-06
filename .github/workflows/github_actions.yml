@@ -1,16 +1,14 @@
-name: GitHub Actions
+name: Linter Check
 
 on: [push]
-jobs:
-    Linter-Check:
-        runs-on: ubuntu-latest 
-        steps: 
-        - run: pip install poetry
-        - run: make install
-        - run: make brain-games
-        - run: make build
-        - run: make publish
-        - run: make package-install
-        - run: make lint
-  
 
+jobs:
+        runs-on: ubuntu-latest 
+        steps:
+        - uses: actions/checkout@v2
+        - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+        - name: Run linter
+        run: make lint
