@@ -1,14 +1,12 @@
 name: Linter Check
+language: python
+python:
+        - "3.6"
 
 on: [push]
 
-jobs:
-        runs-on: ubuntu-latest 
-        steps:
-        - uses: actions/checkout@v2
-        - name: Install dependencies
-        run: |
-          pip3 install poetry
-          make install
-        - name: Run linter
-        run: make lint
+install:
+        - pip3 install poetry
+        - make install
+script:
+        - make lint
