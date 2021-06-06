@@ -1,8 +1,9 @@
 name: GitHub Actions
-uses: actions/checkout@v2
+
 on: [push]
-jobs:
-  Make-Lint:
-    runs-on: ubuntu-latest
-    steps:
-      - run: make lint
+before_install:
+  pip install poetry
+install:
+  poetry install
+script: 
+  make lint
