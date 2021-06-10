@@ -5,9 +5,9 @@ import prompt
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
+    print("Answer \"yes\" if the number is even, otherwise answer \"no\"")
     for num_input in range(3):
-        num = randrange(1000000000000)
+        num = randrange(99)
         print("Question: " + str(num))
         num_input = prompt.string("Your answer: ")
         if (num % 2) == 0:
