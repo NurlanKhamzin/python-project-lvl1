@@ -1,13 +1,9 @@
 #!/usr/bin/env python
-from . import brain_even
-from . import brain_calc
-from . import brain_gcd
+from brain_games.cli import welcome_user
 
 
 def main():
-    brain_even.main()
-    brain_calc.main()
-    brain_gcd.main()
+    welcome_user()
 
 
 if __name__ == '__main__':
