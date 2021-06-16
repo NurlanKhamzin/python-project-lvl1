@@ -1,6 +1,6 @@
 from random import randint, randrange
 
-game_rule = "What number is missing in the progression?"
+GAME_RULE = "What number is missing in the progression?"
 
 
 def game_logic():

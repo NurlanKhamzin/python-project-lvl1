@@ -1,6 +1,6 @@
 from random import randrange
 
-game_rule = "Answer \"yes\" if the number is even, otherwise answer \"no\""
+GAME_RULE = "Answer \"yes\" if the number is even, otherwise answer \"no\""
 
 
 def is_even(n):
