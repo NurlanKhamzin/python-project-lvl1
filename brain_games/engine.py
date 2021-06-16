@@ -5,7 +5,7 @@ def engine(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print("Hello, " + name + "!")
-    print(game.game_rule)
+    print(game.GAME_RULE)
 
     for _ in range(3):
         num, is_correct = game.game_logic()
