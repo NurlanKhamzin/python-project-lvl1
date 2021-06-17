@@ -14,6 +14,7 @@ def game_logic():
         correct.append(formula)
     random = randrange(len(num))
     num[random] = '..'
+    num = ' '.join([str(n) for n in num])
     is_correct = str(correct[random])
     return num, is_correct
 
