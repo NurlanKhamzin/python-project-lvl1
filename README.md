@@ -11,7 +11,7 @@
 [![asciicast](https://asciinema.org/a/wRtjlz5W4pyWVOaccnQuz5wEO.svg)](https://asciinema.org/a/wRtjlz5W4pyWVOaccnQuz5wEO)
 #### brain-gcd showcase:
 [![asciicast](https://asciinema.org/a/uzGG4XoDdLqt7wGLJ04EYWuHz.svg)](https://asciinema.org/a/uzGG4XoDdLqt7wGLJ04EYWuHz)
-#### #### brain-progression showcase:
+#### brain-progression showcase:
 [![asciicast](https://asciinema.org/a/CMFGVZBIj58gkKvPkvPxdVC3X.svg)](https://asciinema.org/a/CMFGVZBIj58gkKvPkvPxdVC3X)
-#### #### brain-prime showcase:
+#### brain-prime showcase:
 [![asciicast](https://asciinema.org/a/PEZ04GkGYslM7XplVqYvDF6my.svg)](https://asciinema.org/a/PEZ04GkGYslM7XplVqYvDF6my)
