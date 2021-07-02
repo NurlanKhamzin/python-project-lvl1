@@ -16,8 +16,8 @@ def is_prime(n):
 
 def game_logic():
     num = randrange(99)
-    is_correct = "yes" if is_prime(num) else "no"
-    return num, is_correct
+    correct_answer = "yes" if is_prime(num) else "no"
+    return num, correct_answer
 
 
 if __name__ == '__main__':

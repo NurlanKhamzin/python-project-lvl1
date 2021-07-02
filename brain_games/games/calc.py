@@ -13,8 +13,8 @@ def game_logic():
            '*': operator.mul}
     op = random.choice(list(ops.keys()))
     num = str(num1) + " " + str(op) + " " + str(num2)
-    is_correct = str(ops.get(op)(num1, num2))
-    return num, is_correct
+    correct_answer = str(ops.get(op)(num1, num2))
+    return num, correct_answer
 
 
 if __name__ == '__main__':

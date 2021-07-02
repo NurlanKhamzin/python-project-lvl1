@@ -1,22 +1,22 @@
 import prompt
 
 
-def engine(game):
+def run(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print("Hello, " + name + "!")
+    print(f"Hello, {name}!")
     print(game.GAME_RULE)
 
     for _ in range(3):
-        num, is_correct = game.game_logic()
+        num, correct_answer = game.game_logic()
         print("Question: " + str(num))
         num_input = prompt.string("Your answer: ")
         message = " is wrong answer ;(. Correct answer was "
-        if num_input == is_correct:
+        if num_input == correct_answer:
             print("Correct!")
         else:
-            print(num_input + message + is_correct + ".")
-            print("Let's try again, " + name + "!")
+            print(f"{num_input}{message}{correct_answer}.")
+            print(f"Let's try again, {name}!")
             break
     else:
-        print("Congratulations, " + name + "!")
+        print(f"Congratulations, {name}!")

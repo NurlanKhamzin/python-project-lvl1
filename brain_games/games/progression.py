@@ -15,8 +15,8 @@ def game_logic():
     random = randrange(len(num))
     num[random] = '..'
     num = ' '.join([str(n) for n in num])
-    is_correct = str(correct[random])
-    return num, is_correct
+    correct_answer = str(correct[random])
+    return num, correct_answer
 
 
 if __name__ == '__main__':
