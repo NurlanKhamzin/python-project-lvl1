@@ -17,7 +17,3 @@ def generate_question_answer():
     task = ' '.join([str(n) for n in task])
     correct_answer = str(correct[random])
     return task, correct_answer
-
-
-if __name__ == '__main__':
-    generate_question_answer()

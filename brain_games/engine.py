@@ -10,12 +10,12 @@ def run(game):
     for _ in range(3):
         task, correct_answer = game.generate_question_answer()
         print("Question: " + str(task))
-        num_input = prompt.string("Your answer: ")
-        message = " is wrong answer ;(. Correct answer was "
-        if num_input == correct_answer:
+        user_answer = prompt.string("Your answer: ")
+        if user_answer == correct_answer:
             print("Correct!")
         else:
-            print(f"{num_input}{message}{correct_answer}.")
+            print(f"{user_answer}is wrong answer ;(. "
+                  f"Correct answer was {correct_answer}.")
             print(f"Let's try again, {name}!")
             break
     else:
