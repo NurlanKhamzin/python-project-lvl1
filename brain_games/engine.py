@@ -8,8 +8,8 @@ def run(game):
     print(game.GAME_RULE)
 
     for _ in range(3):
-        num, correct_answer = game.game_logic()
-        print("Question: " + str(num))
+        task, correct_answer = game.generate_question_answer()
+        print("Question: " + str(task))
         num_input = prompt.string("Your answer: ")
         message = " is wrong answer ;(. Correct answer was "
         if num_input == correct_answer:

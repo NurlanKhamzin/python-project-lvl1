@@ -14,11 +14,11 @@ def is_prime(n):
     return True
 
 
-def game_logic():
-    num = randrange(99)
-    correct_answer = "yes" if is_prime(num) else "no"
-    return num, correct_answer
+def generate_question_answer():
+    task = randrange(99)
+    correct_answer = "yes" if is_prime(task) else "no"
+    return task, correct_answer
 
 
 if __name__ == '__main__':
-    game_logic()
+    generate_question_answer()
